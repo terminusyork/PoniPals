@@ -1,0 +1,39 @@
+generate scaffold User name:string 
+
+rails generate model Pony name:string female:boolean color:integer species:integer atk:integer def:integer spd:integer intel:integer user:references
+
+adding: health, level, mood, form, image_id, exp hunger
+
+rails generate migration AddHealthToPony health:integer
+
+female:true
+male: false
+
+unicorn:0
+earth:1
+pegasi:2
+
+red:0
+blue:1
+yellow:2
+green:3
+
+Need a Pet Database:
+
+Attribute List: ID NAME FORME COLORS GENDER Description Rarity Location
+
+rails generate scaffold Creature idn:interger name:string description:text
+rails generate migration AddLocationToCreature location:string
+Need an image link database:
+
+rails generate model Sprite iid:integer forme:integer color:integer gender:integer location:string creature:references
+
+Attribute List ID FORME COLOR GENDER LOCATION
+
+
+
+Need a Token Database:
+
+Need an item database:
+
+Need an invetory database:
