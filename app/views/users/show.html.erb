@@ -1,0 +1,339 @@
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<h2>Ponies</h2>
+<% @user.ponies.each do |pony| %>
+
+
+  
+  
+ 
+<% if pony.female == true %>
+	<% if pony.color == 0 %>
+		<% if pony.species == 0 %>
+		<img src="http://dl.dropbox.com/u/5183262/icons/redgirlunicorn.png" />
+		
+		<% end %>
+		
+		<% if pony.species == 1 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/redgirlearth.png" />
+			
+		<% end %>
+		
+		<% if pony.species == 2 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/redgirlpegasus.png" />
+			
+		<% end %>
+
+		<% if pony.species == 3 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/girlredpooka.png" />
+			
+		<% end %>
+		
+	<% end %>	
+	
+	
+	<% if pony.color == 1 %>
+		
+		<% if pony.species == 0 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/bluegirlunicorn.png" />
+		
+		<% end %>
+		
+		<% if pony.species == 1 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/bluegirlearth.png" />
+			
+		<% end %>
+		
+		<% if pony.species == 2 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/bluegirlpegasus.png" />
+			
+		<% end %>
+
+		<% if pony.species == 3 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/girlbluepooka.png" />
+			
+		<% end %>
+		
+	<% end %>	
+	
+	
+	<% if pony.color == 2 %>
+	
+		<% if pony.species == 0 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/yellowgirlunicorn.png" />
+		
+		<% end %>
+		
+		<% if pony.species == 1 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/yellowgirlearth.png" />
+			
+		<% end %>
+		
+		<% if pony.species == 2 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/yellowgirlpegasus.png" />
+			
+		<% end %>
+		
+		<% if pony.species == 3 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/girlyellowpooka.png" />
+			
+		<% end %>		
+		
+	<% end %>
+	
+	
+	<% if pony.color == 3 %>
+	
+		<% if pony.species == 0 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/greengirlunicorn.png" />
+		
+		<% end %>
+		
+		<% if pony.species == 1 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/greengirlearth.png" />
+			
+		<% end %>
+		
+		<% if pony.species == 2 %>
+
+		<img src="http://dl.dropbox.com/u/5183262/icons/greengirlpegasus.png" />
+			
+		<% end %>
+		
+		<% if pony.species == 3 %>
+
+		<img src="http://dl.dropbox.com/u/5183262/icons/girlgreenpooka.png" />
+			
+		<% end %>		
+		
+	<% end %>
+	
+	
+<% end %>
+
+<% if pony.female == false %>
+	<% if pony.color == 0 %>
+		<% if pony.species == 0 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/redboyunicorn.png" />
+	
+		<% end %>
+		
+		<% if pony.species == 1 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/redboyearth.png" />
+			
+		<% end %>
+		
+		<% if pony.species == 2 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/redboypegasus.png" />
+			
+		<% end %>
+		
+		<% if pony.species == 3 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/boyredpooka.png" />
+			
+		<% end %>
+		
+	<% end %>	
+	
+	
+	<% if pony.color == 1 %>
+		
+		<% if pony.species == 0 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/blueboyunicorn.png" />
+		
+		<% end %>
+		
+		<% if pony.species == 1 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/blueboyearth.png" />
+			
+		<% end %>
+		
+		<% if pony.species == 2 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/blueboypegasus.png" />
+			
+		<% end %>
+		
+		<% if pony.species == 3 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/boybluepooka.png" />
+			
+		<% end %>		
+		
+	<% end %>	
+	
+	
+	<% if pony.color == 2 %>
+	
+		<% if pony.species == 0 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/yellowboyunicorn.png" />
+		
+		<% end %>
+		
+		<% if pony.species == 1 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/yellowboyearth.png" />
+			
+		<% end %>
+		
+		<% if pony.species == 2 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/yellowboypegasus.png" />
+			
+		<% end %>
+		
+		<% if pony.species == 3 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/boyyellowpooka.png" />
+			
+		<% end %>		
+		
+	<% end %>
+	
+	
+	<% if pony.color == 3 %>
+	
+		<% if pony.species == 0 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/greenboyunicorn.png" />
+		
+		<% end %>
+		
+		<% if pony.species == 1 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/greenboyearth.png" />
+			
+		<% end %>
+		
+		<% if pony.species == 2 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/greenboypegasus.png" />
+			
+		<% end %>
+		
+		<% if pony.species == 3 %>
+		
+		<img src="http://dl.dropbox.com/u/5183262/icons/boygreenpooka.png" />
+			
+		<% end %>		
+		
+	<% end %>	
+	
+<% end %>
+
+
+  
+  <p>
+    <b>Name:</b>
+    <%= pony.name %>
+	
+	    <b>LVL:</b>
+    <%= pony.lvl %>
+	
+    <b>Color:</b>
+    <%= pony.color %>
+  
+    <b>Species:</b>
+    <%= pony.species %>
+
+    <b>Female:</b>
+    <%= pony.female %>
+  </p>
+
+
+  <p>
+    <b>ATK:</b>
+    <%= pony.atk %>
+	
+	    <b>DEF:</b>
+    <%= pony.def %>
+	
+    <b>SPD:</b>
+    <%= pony.spd %>
+
+    <b>INTEL:</b>
+    <%= pony.intel %>
+	
+    <b>Mood:</b>
+    <%= pony.mood %>
+
+    <b>Health:</b>
+    <%= pony.health %>
+	
+	    <b>Forme:</b>
+    <%= pony.forme %>
+  </p>
+  
+
+
+  
+  <% if pony.species == 4 %>
+   <p>
+   <%= form_for ([pony.user, pony]) do |t| %>
+ 
+     <%= select(:pony, :forme, [['Forme 1', 0], ['Forme 2', 1] ]) %>
+     <%= t.submit "Change Forme" %>
+   <% end %>
+  </p>  
+  <% end %>  
+
+<%= link_to 'Level Up!', user_train_path(pony), :method=> :get %>
+  
+  <%= link_to 'Destroy Pet', [pony.user, pony],
+               :confirm => 'Are you sure?',
+               :method => :delete %>
+  </p>
+  
+<% end %>
+
+
+
+
+
+
+<h2>Create a Pet</h2>
+<%= form_for([@user, @user.ponies.build]) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+
+<%= select(:pony, :color, [['Red', 0], ['Blue', 1], ['Yellow', 2], ['Green', 3] ]) %>
+<%= select(:pony, :species, [['Unicorn', 0], ['Earth', 1], ['Pegasus', 2], ['Pooka', 3], ['Selkie', 4] ]) %>
+<%= select(:pony, :female, [['Female', 1], ['Male', 0] ]) %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<br />
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

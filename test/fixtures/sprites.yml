@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  iid: 1
+  forme: 1
+  color: 1
+  gender: 1
+  location: MyString
+  creature: 
+
+two:
+  iid: 1
+  forme: 1
+  color: 1
+  gender: 1
+  location: MyString
+  creature: 

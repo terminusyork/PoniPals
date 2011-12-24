@@ -1,0 +1,27 @@
+<h1>Listing creatures</h1>
+
+<table>
+  <tr>
+    <th>Idn</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @creatures.each do |creature| %>
+  <tr>
+    <td><%= creature.idn %></td>
+    <td><%= creature.name %></td>
+    <td><%= creature.description %></td>
+    <td><%= link_to 'Show', creature %></td>
+    <td><%= link_to 'Edit', edit_creature_path(creature) %></td>
+    <td><%= link_to 'Destroy', creature, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Creature', new_creature_path %>

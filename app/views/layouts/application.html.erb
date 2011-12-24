@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ponipets</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  
+     <div id="wrapper">
+    <div id="header"> 
+	
+	
+	
+	</div>
+    <div id="left">
+      <div id="logo">
+	  
+	       
+
+        
+        <p>Friendship is Magic!</p>
+      </div>
+	  
+
+
+      <div id="nav">
+        <ul>
+		
+          
+		  
+		<%= link_to image_tag("http://dl.dropbox.com/u/5183262/icons/creatures.png", :border=>0), users_path %>
+		<%= link_to image_tag("http://dl.dropbox.com/u/5183262/icons/dex.png", :border=>0), creatures_path %>
+
+
+        </ul>
+      </div>
+   
+    </div>
+    <div id="right">
+		 		      <div id="h3"> 
+	<%= link_to "Mane Page", home_index_path %>
+	<hr>
+	</div>
+	
+		<%= yield %>
+    <div class="clear"> </div>
+    <div id="spacer"> </div>
+    <div id="footer">
+      <div id="copyright">
+        All elements belonging to other parties are used in a ficticious and periodic manner.
+      </div>
+	  <div id="footerline"></div>
+    </div>
+	
+  </div>
+</head>
+<body>
+
+</body>
+</html>

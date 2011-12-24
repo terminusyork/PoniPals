@@ -1,0 +1,98 @@
+<p id="notice"><%= notice %></p>
+
+
+<h1><%= @creature.name %></h1>
+<p>
+  <b>Idn:</b>
+  <%= @creature.idn %>
+
+
+
+  <b>Name:</b>
+  <%= @creature.name %>
+
+  <b>Rarity:</b>
+  <%= @creature.rarity %>
+  
+    <b>Location:</b>
+  <%= @creature.location %>
+
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @creature.description %>
+</p>
+
+<h2>Images:</h2>
+
+<% @creature.sprites.each do |sprite| %>
+
+<IMG src=<%= sprite.location %> >
+
+  <p>
+
+  
+  
+    <b>iid:</b>
+    <%= sprite.iid %>
+  
+ 
+  
+    <b>Location:</b>
+    <%= sprite.location %>
+  
+  
+    
+    <b>Color:</b>
+    <%= sprite.color %>
+  
+  
+    
+    <b>Gender:</b>
+    <%= sprite.gender %>
+  
+  
+    
+    <b>Forme:</b>
+    <%= sprite.forme %>
+  </p>
+  
+    <%= link_to 'Destroy Image', [sprite.creature, sprite],
+               :confirm => 'Are you sure?',
+               :method => :delete %>
+</p>
+<hr>
+
+<% end %>
+
+
+<h2>Add a image:</h2>
+<%= form_for([@creature, @creature.sprites.build]) do |f| %>
+  <div class="field">
+    <%= f.label :iid %><br />
+    <%= f.text_field :iid %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  
+  <b>Color:</b>
+	<%= select(:sprite, :color, [['Red', 0], ['Blue', 1], ['Yellow', 2], ['Green', 3] ]) %>
+  <b>Gender:</b>
+	<%= select(:sprite, :gender, [['Female', 1], ['Male', 0] ]) %>
+	<b>Forme:</b>
+  <%= select(:sprite, :forme, [['Forme 1', 0], ['Forme 2', 1] ]) %>
+  
+  
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Edit', edit_creature_path(@creature) %> |
+<%= link_to 'Back', creatures_path %>

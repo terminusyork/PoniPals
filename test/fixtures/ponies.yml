@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  female: false
+  color: 1
+  species: 1
+  atk: 1
+  def: 1
+  spd: 1
+  intel: 1
+  user: 
+
+two:
+  name: MyString
+  female: false
+  color: 1
+  species: 1
+  atk: 1
+  def: 1
+  spd: 1
+  intel: 1
+  user: 
